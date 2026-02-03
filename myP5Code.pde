@@ -5,10 +5,15 @@ setup = function() {
     
     drawFish(200, 200, color(200,0,200)); 
     drawFish(300, 200, color(0,200,200));
+    drawShark(100, 100, color());
+    drawCircle(250, 250, color());
+    drawBlind(250, 270, color());
+  
 };
 
 //🟢draw Function - will run on repeat
-draw = function(){
+
+
 
 };
 
@@ -24,6 +29,24 @@ var drawFish = function(fishX, fishY, fishColor){
   text("𓆝", fishX, fishY);
 };
 
+//sharky sharky added 
 
+var drawShark = function(sharkX, sharkY, sharkColor){
+  textSize(30);
+  fill(sharkColor);
+  text("🦈", sharkX, sharkY);
+};
 
+//the blood circle
 
+var drawCircle = function(circleX, circleY, circleColor){
+  textSize(30);
+  fill(circleColor);
+  text("🔴", circleX, circleY);}
+
+//blind person
+
+  var drawBlind = function(BlindX, BlindY, BlindColor){
+  textSize(30);
+  fill(BlindColor);
+  text("👨‍🦯", BlindX, BlindY);}
