@@ -1,41 +1,49 @@
 //🟢setup Function - will run once
 
 //variable declaration
-var fishX = 10;
+var fishX = 100;
+var fishY = 100;
 
 setup = function() {
-    size(600, 400);
-    background(255,255,255,0);
-    
-    drawFish(200, 200, color(200,0,200)); 
-    drawShark(mouseX, mouseY, color());
-    drawSquid(250, 250, color());
-    drawOrange(250, 270, color());
-  
+      size(600, 400);
+      background(255,255,255,0);
+              
+      drawFish(200, 200, color(200,0,200)); 
+      drawShark(mouseX, mouseY);
+      drawSquid(250, 250);
+      drawOrange(250, 270);
+                                
 };
 
 //🟢draw Function - will run on repeat
 
 draw = function(){
-background(255,255,255,0);
-    
-    drawFish(200, 200, color(200,0,200)); 
-    drawShark(mouseX, mouseY, color());
-    drawSquid(250, 250, color());
-    drawOrange(250, 270, color());
+  background(255,255,255,0);
+      
+  drawFish(100, 100,); 
+  drawShark(mouseX, mouseY);
+  drawSquid(200, 250);
+  drawOrange(150, 150);
+
+
+if(fishX<200){
+fishX-=9
+}
+
+
+
+
 
 fishX = fishX + 1;
 
   fill(255, 255, 255);
   drawShark(mouseX, mouseY, 40, 40);
-
   
- 
 }
 
 //🟢mouseClicked Function - will run when mouse is clicked
 mouseClicked = function(){
-
+FishX-=4
 }
 
 //🟡drawFish Function - will run when called
